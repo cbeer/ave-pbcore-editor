@@ -1,0 +1,376 @@
+/*
+    Copyright (C) 2008 Brown University
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#wrapper {
+    border: 0px solid blue;
+    width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+    
+#header {
+    border-bottom: 2px solid #669;
+    height: 110px;
+}
+        
+#content {
+    border: 0px dotted black;
+    min-height:400px;
+    height: auto !important;
+    height: 400px;
+}
+    
+#navbar {
+    float: left;
+    width: 0px; 
+}    
+    
+#main {
+    float: left;
+    border-right: 2px solid #669;
+    border-left: 0px solid black;    
+    width: 670px;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}  
+
+#sidebar {
+    float: left;
+    width: 95px;
+    border: 0px dotted black;
+    padding: 20px 0px 0px 5px;        
+}
+        
+#endbar {
+    clear:both; 
+    padding: 0px;
+    text-align: left;
+}
+    
+#trigger-buttons { 
+    height: 26px;
+    text-align: left;
+    padding: 4px 0px 0px 0px;
+    border: 0px dotted red;
+}
+   
+body {
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+ 
+h4 {
+    font-family: arial, helvetica, sans-serif;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    color: #669;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    margin: 10px 0px 0px 10px;
+    padding: 0px;
+    color: #669;
+    background-color: white;
+    text-transform: uppercase;
+}
+    
+p {
+    margin: 2px 0px 2px 0px;
+    border: 0px solid black;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+hr {
+    border: 0;
+    color: white;
+    background-color: #669;
+    height: 1px;
+    width: 100%;
+    margin: 12px 0px 0px 0px;
+}
+
+a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+a:hover  {    
+    text-decoration: underline;    
+}
+
+.output-label {
+    float: left;
+    margin-left: 20px;
+    border: 0px solid black;   
+    width: 100px;
+    padding-left: 0px;
+    font-weight: bold;
+    vertical-align: bottom;  
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+.output-text {    
+    font-weight: normal;
+    vertical-align: bottom;
+    clear: left;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.output-screen {
+    height: 330px;
+}
+
+.inspect-screen {
+    height: 330px;
+}
+
+.metadata-section {
+    border-bottom: 1px solid #669;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 0px 10px 0px;
+}
+
+.metadata-section-optional {
+    border: 0px solid black;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 0px 0px 0px;
+}
+
+.justify-field {
+    float: left;
+    border: 0px solid black;    
+    width: 80px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    font-family: arial, helvetica, sans-serif;
+}
+           
+.input-long input {
+    width: 400px;
+    background-color: white;
+    color: #669;
+    font-weight: bold;
+    padding-left: 3px;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.input-short input {
+    width: 200px;
+    background-color: white;
+    color: #669;
+    font-weight: bold;
+    padding-left: 3px;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+}
+   
+.drop-down {
+    width: 200px;
+    text-align: left;
+    padding-left: 0px;
+    color: #669;
+    background-color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    padding-left: 3px;
+}
+
+.optional-title {
+    margin: 10px 0px 5px 0px;
+}
+
+.add-optional {
+    padding: 2px;
+}
+
+/* date styles */
+#wrap-date {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 0px solid black;
+    height: 58px;
+    width: 640px;
+}
+
+.date-choice {
+    float:left;
+    border: 0px solid black;
+    width: 338px;
+    height: 56px;
+}
+
+.range-choice {
+    float:left;
+    border: 0px solid yellow;
+    width: 64px;
+    height: 56px;
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+.date-wrap {
+    border: 0px solid orange;
+    height: 56px;
+    font-weight: bold;
+}
+
+.date-top {
+    padding-left: 0px;
+    float:left;
+    border: 0px solid black;   
+}
+
+.date-bottom {
+    float:left;
+    padding-left: 0px;
+    border: 0px solid black;
+}
+
+.date-label {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.input-date input {
+    width: 85px;
+    padding-left: 3px;    
+    background-color: white;
+    color: #669;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+/* Override Orbeon Styles */
+.xforms-repeat-selected-item-1 {
+    background-color: white;
+    color: #669;
+}
+
+.xforms-repeat-selected-item-2 {
+    background-color: white;
+    color: #669;
+}
+
+.xforms-repeat-selected-item-3 {
+    background-color: white;
+    color: #669;
+}
+
+.xforms-repeat-selected-item-4 {
+    background-color: white;
+    color: #669;
+}
+
+.xforms-trigger span { 
+    vertical-align: middle; 
+}
+
+.submit-error {
+    color:red;
+    background-color: white;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.submit {
+    height: 20px;
+    border: 1px solid black;
+}
+
+.submit-done {
+    padding-left: 20px; 
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.xforms-required-empty input, textarea.xforms-required-empty, input.xforms-required-empty {
+    background-color: #ffc;
+    color: #669;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    padding-left: 3px;
+}
+
+select.xforms-required-empty {
+    background-color: #ffc;
+    color: #669;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    padding-left: 3px;
+}
+
+.xforms-textarea {
+    width: 400px;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px 3px 10px 3px;
+    background-color: white;
+    color: #669;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.xforms-help-panel { 
+    width: 300px;
+    color: #669;
+    background-color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
+    text-align: left;
+}
+
+.xforms-help-panel .bd { 
+    height: 80px; 
+    overflow: auto; 
+}
+

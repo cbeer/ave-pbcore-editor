@@ -1,0 +1,598 @@
+<?oxygen NVDLSchema="file:///Applications/oxygen/samples/nvdl/xhtml-xforms.nvdl" ?>
+<html xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns="http://www.w3.org/1999/xhtml" xmlns:xxforms="http://orbeon.org/oxf/xml/xforms">
+	<head>
+		<title>PBCore tools</title>
+	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
+		<xforms:model>
+			<xforms:instance id="page-instance" src="/instance/page-instance.xml" /> 
+			<xforms:instance id="pbcore-instance" src="/instance/pbcore-instance.xml" /> 
+			<xforms:instance id="pbcoreIdentifier-instance" src="/instance/pbcoreIdentifier-instance.xml" />
+			<xforms:instance id="pbcoreTitle-instance" src="/instance/pbcoreTitle-instance.xml" />
+			<xforms:instance id="pbcoreSubject-instance" src="/instance/pbcoreSubject-instance.xml" />
+			<xforms:instance id="pbcoreDescription-instance" src="/instance/pbcoreDescription-instance.xml" />
+			<xforms:instance id="pbcoreGenre-instance" src="/instance/pbcoreGenre-instance.xml" />
+			<xforms:instance id="pbcoreRelation-instance" src="/instance/pbcoreRelation-instance.xml" />
+			<xforms:instance id="pbcoreCoverage-instance" src="/instance/pbcoreCoverage-instance.xml" />
+			<xforms:instance id="pbcoreAudienceLevel-instance" src="/instance/pbcoreAudienceLevel-instance.xml" />
+			<xforms:instance id="pbcoreAudienceRating-instance" src="/instance/pbcoreAudienceRating-instance.xml" />
+			<xforms:instance id="pbcoreCreator-instance" src="/instance/pbcoreCreator-instance.xml" />
+			<xforms:instance id="pbcoreContributor-instance" src="/instance/pbcoreContributor-instance.xml" />
+			<xforms:instance id="pbcorePublisher-instance" src="/instance/pbcorePublisher-instance.xml" />
+			<xforms:instance id="pbcoreRightsSummary-instance" src="/instance/pbcoreRightsSummary-instance.xml" />
+			<xforms:instance id="pbcoreInstantiation-instance" src="/instance/pbcoreInstantiation-instance.xml" />
+			<xforms:instance id="pbcoreDateAvailable-instance" src="/instance/pbcoreDateAvailable-instance.xml" />
+			<xforms:instance id="pbcoreFormatID-instance" src="/instance/pbcoreFormatID-instance.xml" />
+			<xforms:instance id="pbcoreAnnotation-instance" src="/instance/pbcoreAnnotation-instance.xml" />
+			<xforms:instance id="toggle-instance" src="http://dl.lib.brown.edu:8083/editor/instance/toggle-instance.xml" />
+			<xforms:bind nodeset="instance('toggle-instance')/button1" readonly="@readonly='true'"/>
+			<xforms:bind nodeset="instance('toggle-instance')/button2" readonly="@readonly='true'"/>
+			
+			<xforms:bind nodeset="//pbcore:dateAvailableStart" type="xforms:date"/>
+			<xforms:bind nodeset="//pbcore:dateAvailableEnd" type="xforms:date"/>
+			
+			<xforms:setvalue ev:event="xforms-model-construct-done" value="xxforms:get-request-parameter('pid')" ref="instance('page-instance')/pid" />
+			<xforms:send ev:event="xforms-model-construct-done" submission="load-data-submission"/>
+			<xforms:submission id="load-data-submission" method="get" serialization="none" resource="{xxforms:get-request-parameter('src')}" replace="instance" instance="pbcore-instance" />
+		</xforms:model>
+	</head>
+	<body>
+		<div id="wrapper">
+		
+			<div id="header">
+			<div id="trigger-buttons">
+			<xforms:trigger ref="instance('toggle-instance')/button2/@readonly">
+				<xforms:label><span>Return to Form</span></xforms:label>
+				<xforms:toggle ev:event="DOMActivate" case="form"/>
+				<xforms:setvalue ev:event="DOMActivate" ref="instance('toggle-instance')/button2/@readonly" value="'true'" />
+				<xforms:setvalue ev:event="DOMActivate" ref="instance('toggle-instance')/button1/@readonly" value="'false'" />
+			</xforms:trigger>
+			<xforms:trigger>
+				<xforms:label><span>Instance Inspector</span></xforms:label>
+				<xforms:toggle ev:event="DOMActivate" case="inspector" />
+				<xforms:setvalue ev:event="DOMActivate" ref="instance('toggle-instance')/button2/@readonly" value="'false'" />
+			</xforms:trigger>
+			</div>
+			</div>
+			
+			<div id="content">
+				<div id="main">
+					<xforms:switch>
+						<!-- main form view -->
+						<xforms:case id="form" selected="true">
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreIdentifier" id="pbcoreIdentifier-repeat">
+						<div class="identifier">
+							<h4>Identifier
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreIdentifier) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreIdentifier-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:identifier" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Identifier</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:identifierSource" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Identifier Source</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreTitle" id="pbcoreTitle-repeat">
+						<div class="title">
+							<h4>Title
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreTitle) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreTitle-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:title" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Title</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:titleType" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Title Type</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					
+					
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreSubject" id="pbcoreSubject-repeat">
+						<div class="subject">
+							<h4>Subject
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreSubject) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreSubject-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:subject" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Subject</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:subjectAuthorityUsed" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Subject Authority Used</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreDescription" id="pbcoreDescription-repeat">
+						<div class="description">
+							<h4>Description
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreDescription) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreDescription-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:description" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Description</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:descriptionType" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Description Type</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					
+					
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreGenre" id="pbcoreGenre-repeat">
+						<div class="genre">
+							<h4>Genre
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreGenre) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreGenre-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:genre" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Genre</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:genreAuthorityUsed" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Genre Authority Used</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreRelation" id="pbcoreRelation-repeat">
+						<div class="relation">
+							<h4>Relation
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreRelation) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreRelation-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:relationType" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Relation Type</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:relationIdentifier" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Relation Identifier</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					
+					
+					
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreCoverage" id="pbcoreCoverage-repeat">
+						<div class="coverage">
+							<h4>Coverage
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreCoverage) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreCoverage-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:coverage" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Coverage</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:coverageType" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Coverage Type</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					
+					
+					
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreAudienceLevel" id="pbcoreAudienceLevel-repeat">
+						<div class="audienceLevel">
+							<h4>Audience Level
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreAudienceLevel) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreAudienceLevel-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:audienceLevel" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Audience Level</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreAudienceRating" id="pbcoreAudienceRating-repeat">
+						<div class="audienceRating">
+							<h4>Audience Rating
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreAudienceRating) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreAudienceRating-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:audienceRating" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Audience Rating</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreCreator" id="pbcoreCreator-repeat">
+						<div class="creator">
+							<h4>Creator
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreCreator) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreCreator-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:creator" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Creator</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:creatorRole" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Creator Role</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreContributor" id="pbcoreContributor-repeat">
+						<div class="contributor">
+							<h4>Contributor
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreContributor) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreContributor-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:contributor" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Contributor</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:contributorRole" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Contributor Role</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcorePublisher" id="pbcorePublisher-repeat">
+						<div class="publisher">
+							<h4>Publisher
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcorePublisher) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcorePublisher-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:publisher" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Publisher</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:publisherRole" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Publisher Role</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					<xforms:group ref="instance('pbcore-instance')">
+						<xforms:repeat nodeset="pbcore:pbcoreExtension" id="pbcoreExtension-repeat">
+						<div class="extension">
+							<h4>Extension
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreExtension) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreExtension-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:extension" class="input-long" incremental="true">
+								<xforms:label class="justify-field">Extension</xforms:label>
+								<xforms:alert>Field cannot be empty.</xforms:alert>
+								</xforms:input>
+							</p>
+							<p>
+							<xforms:input ref="pbcore:extensionAuthorityUsed" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Extension Authority Used</xforms:label>
+								</xforms:input>
+								</p>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+							<xforms:group ref="instance('pbcore-instance')">
+								
+						<xforms:repeat nodeset="pbcore:pbcoreInstantiation" id="pbcoreInstantiation-repeat">
+							<!--	<p class="add-optional">
+								<xforms:trigger appearance="minimal">
+									<xforms:label><img src="/image/add.gif" /> Identifier</xforms:label>
+									<xforms:insert ev:event="DOMActivate" context="." nodeset="instance('pbcore-instance')/pbcore:pbcoreInstantiation/pbcore:pbcoreDateAvailable[last()]" at="index('pbcoreInstantiation-repeat')" origin="instance('pbcoreDateAvailable-instance')/pbcore:pbcoreDateAvailable" />
+									<xforms:setfocus ev:event="DOMActivate" control="additional-identifier" />
+								</xforms:trigger>
+							</p> -->
+						<div class="instantiation">
+							<h4>Instantiation
+							<xforms:trigger appearance="minimal" ref="self::node()[count(../pbcore:pbcoreInstantiation) &gt; 0]">
+								<xforms:label><img src="/image/remove.gif" /></xforms:label>
+								<xforms:delete ev:event="DOMActivate" nodeset="." at="index('pbcoreInstantiation-repeat')" />
+							</xforms:trigger>
+							</h4>
+							<p>
+							<xforms:input ref="pbcore:dateCreated" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Date Created</xforms:label>
+								</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:dateIssued" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Date Issued</xforms:label>
+									</xforms:input>
+									</p>
+							<p>
+							<xforms:input ref="pbcore:formatPhysical" class="input-long" incremental="false">
+								<xforms:label class="justify-field">Physical Format</xforms:label>
+								</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatDigital" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Digital Format</xforms:label>
+									</xforms:input>
+									</p>
+									<p>
+									<xforms:input ref="pbcore:formatLocation" class="input-long" incremental="false">
+										<xforms:label class="justify-field">Format Location</xforms:label>
+										</xforms:input>
+										</p>
+								<p>
+								<xforms:input ref="pbcore:formatMediaType" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Media Type</xforms:label>
+									</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatGenerations" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Generations</xforms:label>
+									</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatEncoding" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Encoding</xforms:label>
+									</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatFileSize" class="input-long" incremental="false">
+									<xforms:label class="justify-field">File Size</xforms:label>
+									</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatTmeStart" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Start Time</xforms:label>
+									</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatDuration" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Duration</xforms:label>
+									</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatDataRate" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Data Rate</xforms:label>
+									</xforms:input>
+								</p>
+								<p>
+								<xforms:input ref="pbcore:formatBitDepth" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Bit Depth</xforms:label>
+									</xforms:input>
+								</p><p>
+								<xforms:input ref="pbcore:formatSamplingRate" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Sampling Rate</xforms:label>
+									</xforms:input>
+								</p>
+							
+							<xforms:repeat nodeset="pbcore:pbcoreDateAvailable" id="pbcoreDateAvailable-repeat">
+								<div class="formatIdentifier"><h5>Date Available</h5>
+									<p>
+										<xforms:input ref="pbcore:dateAvailableStart" class="input-long">
+											<xforms:label class="justify-field">Start</xforms:label>"										
+										</xforms:input></p><p>
+											<xforms:input ref="pbcore:dateAvailableEnd" class="input-long">
+												<xforms:label class="justify-field">End</xforms:label>"										
+											</xforms:input></p>
+								</div>
+							</xforms:repeat>
+							<xforms:repeat nodeset="pbcore:pbcoreFormatID" id="pbcoreFormatID-repeat">
+								<div class="formatIdentifier"><h5>Format Identifier</h5>
+									<p>
+										<xforms:input ref="pbcore:formatIdentifier" class="input-long">
+											<xforms:label class="justify-field">Format Identifier</xforms:label>"										
+										</xforms:input></p><p>
+											<xforms:input ref="pbcore:formatIdentifierSource" class="input-long">
+												<xforms:label class="justify-field">Format Identifier Source</xforms:label>"										
+											</xforms:input></p>
+								</div>
+							</xforms:repeat>
+							
+							<xforms:repeat nodeset="pbcore:pbcoreAnnotation" id="pbcoreAnnotation-repeat">
+								<div class="formatIdentifier">
+									<p>
+										<xforms:input ref="pbcore:annotation" class="input-long">
+											<xforms:label class="justify-field">Annotation</xforms:label>"										
+										</xforms:input></p>
+								</div>
+							</xforms:repeat>
+						</div>
+						</xforms:repeat>
+					</xforms:group>
+					</xforms:case>
+					<!-- inspector view -->
+						<xforms:case id="inspector">
+							<div class="inspect-screen">
+								<widget:xforms-instance-inspector xmlns:widget="http://orbeon.org/oxf/xml/widget" />
+							</div>
+						</xforms:case>
+					</xforms:switch>
+				</div>
+			
+				<div id="sidebar">
+					<p class="add-optional">
+						<xforms:trigger appearance="minimal">
+							<xforms:label><img src="/image/add.gif" /> Identifier</xforms:label>
+							<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreIdentifier[last()]" at="index('pbcoreIdentifier-repeat')" position="after" origin="instance('pbcoreIdentifier-instance')/pbcore:pbcoreIdentifier" />
+							<xforms:setfocus ev:event="DOMActivate" control="additional-identifier" />
+						</xforms:trigger>
+					</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Title</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreTitle[last()]" at="index('pbcoreTitle-repeat')" position="after" origin="instance('pbcoreTitle-instance')/pbcore:pbcoreTitle" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-title" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Subject</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreSubject[last()]" at="index('pbcoreSubject-repeat')" position="after" origin="instance('pbcoreSubject-instance')/pbcore:pbcoreSubject" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-subject" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Description</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreDescription[last()]" at="index('pbcoreDescription-repeat')" position="after" origin="instance('pbcoreDescription-instance')/pbcore:pbcoreDescription" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-description" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Genre</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreGenre[last()]" at="index('pbcoreGenre-repeat')" position="after" origin="instance('pbcoreGenre-instance')/pbcore:pbcoreGenre" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-genre" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Relation</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreRelation[last()]" at="index('pbcoreRelation-repeat')" position="after" origin="instance('pbcoreRelation-instance')/pbcore:pbcoreRelation" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-relation" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Coverage</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreCoverage[last()]" at="index('pbcoreCoverage-repeat')" position="after" origin="instance('pbcoreCoverage-instance')/pbcore:pbcoreCoverage" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-coverage" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Audience Level</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreAudienceLevele[last()]" at="index('pbcoreAudienceLevel-repeat')" position="after" origin="instance('pbcoreAudienceLevel-instance')/pbcore:pbcoreAudienceLevel" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-audiencelevel" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Creator</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreCreator[last()]" at="index('pbcoreCreator-repeat')" position="after" origin="instance('pbcoreCreator-instance')/pbcore:pbcoreCreator" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-creator" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Contributor</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreContributor[last()]" at="index('pbcoreContributor-repeat')" position="after" origin="instance('pbcoreContributor-instance')/pbcore:pbcoreContributor" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-contributor" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Publisher</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcorePublisher[last()]" at="index('pbcorePublisher-repeat')" position="after" origin="instance('pbcorePublisher-instance')/pbcore:pbcorePublisher" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-publisher" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Rights Summary</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreRightsSummary[last()]" at="index('pbcoreRightsSummary-repeat')" position="after" origin="instance('pbcoreRightsSummary-instance')/pbcore:pbcoreRightsSummary" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-rightsSummary" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Extension</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreExtension[last()]" at="index('pbcoreExtension-repeat')" position="after" origin="instance('pbcoreExtension-instance')/pbcore:pbcoreExtension" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-extension" />
+							</xforms:trigger>
+						</p>
+						<p class="add-optional">
+							<xforms:trigger appearance="minimal">
+								<xforms:label><img src="/image/add.gif" /> Instantiation</xforms:label>
+								<xforms:insert ev:event="DOMActivate" context="instance('pbcore-instance')" nodeset="instance('pbcore-instance')/pbcore:pbcoreInstantiation[last()]" at="index('pbcoreInstantiation-repeat')" position="after" origin="instance('pbcoreInstantiation-instance')/pbcore:pbcoreInstantiation" />
+								<xforms:setfocus ev:event="DOMActivate" control="additional-extension" />
+							</xforms:trigger>
+						</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

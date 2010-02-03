@@ -1,0 +1,27 @@
+<PBCoreDescriptionDocument xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+	<pbcoreInstantiation>
+		<dateCreated />
+		<dateIssued />
+		<formatPhysical />
+		<formatDigital />
+		<formatLocation />
+		<formatMediaType />
+		<formatGenerations />
+		<formatStandard />
+		<formatEncoding />
+		<formatFileSize />
+		<formatTimeStart />
+		<formatDuration />
+		<formatDataRate />
+		<formatBitDepth />
+		<formatSamplingRate />
+		<formatFrameSize />
+		<formatAspectRatio />
+		<formatFrameRate />
+		<formatColors />
+		<formatTracks />
+		<formatChannelConfiguration />
+		<language />
+		<alternativeModes />
+	</pbcoreInstantiation>
+</PBCoreDescriptionDocument>

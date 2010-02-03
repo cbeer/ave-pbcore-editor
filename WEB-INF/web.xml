@@ -1,0 +1,32 @@
+<web-app>
+
+  <display-name>PBCore tool</display-name>
+      
+  <!-- Orbeon XForms Engine -->
+  <filter>
+    <filter-name>orbeon-xforms-filter</filter-name>
+    <filter-class>org.orbeon.oxf.servlet.OrbeonXFormsFilter</filter-class>
+    <init-param>
+      <param-name>oxf.xforms.renderer.context</param-name>
+      <param-value>/orbeon</param-value>
+    </init-param>
+  </filter>
+  
+  <!-- Any web resource under /mods is processed by the XForms engine -->
+  <filter-mapping>
+    <filter-name>orbeon-xforms-filter</filter-name>
+    <url-pattern>/pbcore/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- This is necessary so that XForms engine resources can be served appropriately -->
+  <filter-mapping>
+    <filter-name>orbeon-xforms-filter</filter-name>
+    <url-pattern>/orbeon/*</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+	  <welcome-file>pbcore/demo.html</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
+
