@@ -4,7 +4,6 @@
 		<title>PBCore tools</title>
 	<link rel="stylesheet" type="text/css" href="/css/editor.css" />
 		<xforms:model>
-			<xforms:instance id="page-instance" src="/instance/page-instance.xml" /> 
 			<xforms:instance id="pbcore-instance" src="/instance/pbcore-instance.xml" /> 
 			<xforms:instance id="pbcoreIdentifier-instance" src="/instance/pbcoreIdentifier-instance.xml" />
 			<xforms:instance id="pbcoreTitle-instance" src="/instance/pbcoreTitle-instance.xml" />
@@ -24,6 +23,7 @@
 			<xforms:instance id="pbcoreFormatID-instance" src="/instance/pbcoreFormatID-instance.xml" />
 			<xforms:instance id="pbcoreAnnotation-instance" src="/instance/pbcoreAnnotation-instance.xml" />
 			<xforms:instance id="toggle-instance" src="http://dl.lib.brown.edu:8083/editor/instance/toggle-instance.xml" />
+			<xforms:instance id="page-instance" src="/instance/page-instance.xml" /> 
 			<xforms:bind nodeset="instance('toggle-instance')/button1" readonly="@readonly='true'"/>
 			<xforms:bind nodeset="instance('toggle-instance')/button2" readonly="@readonly='true'"/>
 			
