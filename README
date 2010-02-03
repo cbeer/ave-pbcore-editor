@@ -1,0 +1,3 @@
+This is a demonstration Orbeon XForms-based editor for PBCore documents. It should be deployed to an existing Java servlet container with Orbeon already installed and functioning. This initial work is based on existing XForms/MODS work done by Brown University <http://dl.lib.brown.edu/its/software/metadata/>.
+
+You can load existing XML documents by using the "src" request parameter -- e.g.  http://my.servlet.server/editor/pbcore/demo.html?src={url to an existing document}
