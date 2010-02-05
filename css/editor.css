@@ -174,33 +174,38 @@ a:hover  {
 
 .justify-field {
     float: left;
+    clear: left;
     border: 0px solid black;    
-    width: 80px;
+    width: 120px;
     padding-left: 10px;
     font-weight: bold;
     color: black;
     background-color: white;
     font-family: arial, helvetica, sans-serif;
+    margin-bottom: 0.6em;
 }
-           
-.input-long input {
-    width: 400px;
+       
+
+.input-long input, .input-short input {
     background-color: white;
-    color: #669;
-    font-weight: bold;
+    color: #333;
     padding-left: 3px;
     font-size: 12px;
     font-family: arial, helvetica, sans-serif;
+    border: 1px solid #999;
+	                    margin-bottom: 0.6em;
+}
+
+input:focus {
+	background-color: #EEEEFF;
+}
+
+.input-long input {
+    width: 400px;
 }
 
 .input-short input {
     width: 200px;
-    background-color: white;
-    color: #669;
-    font-weight: bold;
-    padding-left: 3px;
-    font-size: 12px;
-    font-family: arial, helvetica, sans-serif;
 }
    
 .drop-down {
@@ -374,3 +379,17 @@ select.xforms-required-empty {
     overflow: auto; 
 }
 
+
+.xforms-group {
+         margin-bottom: 2em;
+	 display: block;
+	 padding-bottom: 2em;
+        }
+
+.block {
+ 	clear: left;
+}
+
+.block > .block {
+ 	padding-left: 20px;
+}
