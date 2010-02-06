@@ -28,14 +28,23 @@
 			<xforms:instance id="toggle-instance" src="http://dl.lib.brown.edu:8083/editor/instance/toggle-instance.xml" />
 			<xforms:instance id="page-instance" src="http://localhost:8080/ave-pbcore-editor/instance/page-instance.xml" /> 
 			
+			
+			
 			<xforms:instance id="ebu_ObjectTypeCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_ObjectTypeCodeCS.xml" />
 			<xforms:instance id="ebu_DescriptionTypeCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_DescriptionTypeCodeCS.xml" />
 			<xforms:instance id="tva_HowRelatedCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/tva_HowRelatedCS.xml" />
 			<xforms:instance id="ebu_ParentalGuidanceCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_ParentalGuidanceCodeCS.xml" />
 			<xforms:instance id="ebu_RoleCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_RoleCodeCS.xml" />
 			<xforms:instance id="ebu_Iso639_2LanguageCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_Iso639_2LanguageCodeCS.xml" />
-			<xforms:instance id="ebu_ContentGenreCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_ContentGenreCS.xml" />
+			<xforms:instance id="ebu_StorageMediaTypeCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_StorageMediaTypeCodeCS.xml" />
+			<xforms:instance id="ebu_FileFormatCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_FileFormatCS.xml" />
+			<xforms:instance id="ebu_VideoCompressionCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_VideoCompressionCodeCS.xml" />
+			<xforms:instance id="ebu_VideoFrameRateCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_VideoFrameRateCS.xml" />
+			<xforms:instance id="ebu_VisualAspectRatioCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_VisualAspectRatioCS.xml" />
+			<xforms:instance id="ebu_ColourCodeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_ColourCodeCS.xml" />
+<xforms:instance id="ebu_MediaTypeCS" src="http://localhost:8080/ave-pbcore-editor/instance/ebucore/ebu_MediaTypeCS.xml" />
 			
+			<xforms:instance id="mimeTypes" src="http://localhost:8080/ave-pbcore-editor/instance/mime.types" />
 			
 			<xforms:bind nodeset="instance('toggle-instance')/button1" readonly="@readonly='true'" />
 			<xforms:bind nodeset="instance('toggle-instance')/button2" readonly="@readonly='true'" />
@@ -511,11 +520,38 @@
 							<xforms:input ref="pbcore:formatPhysical" class="input-long" incremental="false">
 								<xforms:label class="justify-field">Physical Format</xforms:label>
 								</xforms:input>
+								<div class="recommendation">
+								<xforms:select1 ref="pbcore:formatPhysical">
+								<xforms:label class="justify-field">Recommended:</xforms:label>
+								<xforms:item>
+									<xforms:label></xforms:label>
+									<xforms:value></xforms:value>
+								</xforms:item>
+									<xforms:itemset nodeset="instance('ebu_StorageMediaTypeCodeCS')//Term">
+										<xforms:label ref="Name" />
+										<xforms:value ref="Name" />
+									</xforms:itemset>
+								</xforms:select1>
+								</div>
 								</p>
 								<p>
 								<xforms:input ref="pbcore:formatDigital" class="input-long" incremental="false">
 									<xforms:label class="justify-field">Digital Format</xforms:label>
 									</xforms:input>
+									
+									<div class="recommendation">
+									<xforms:select1 ref="pbcore:formatDigital">
+									<xforms:label class="justify-field">Recommended:</xforms:label>
+									<xforms:item>
+										<xforms:label></xforms:label>
+										<xforms:value></xforms:value>
+									</xforms:item>
+										<xforms:itemset nodeset="instance('mimeTypes')//name">
+											<xforms:label ref="." />
+											<xforms:value ref="." />
+										</xforms:itemset>
+									</xforms:select1>
+									</div>
 									</p>
 									<p>
 									<xforms:input ref="pbcore:formatLocation" class="input-long" incremental="false">
@@ -526,6 +562,20 @@
 								<xforms:input ref="pbcore:formatMediaType" class="input-long" incremental="false">
 									<xforms:label class="justify-field">Media Type</xforms:label>
 									</xforms:input>
+									
+									<div class="recommendation">
+									<xforms:select1 ref="pbcore:formatMediaType">
+									<xforms:label class="justify-field">Recommended:</xforms:label>
+									<xforms:item>
+										<xforms:label></xforms:label>
+										<xforms:value></xforms:value>
+									</xforms:item>
+										<xforms:itemset nodeset="instance('ebu_MediaTypeCS')//Term">
+											<xforms:label ref="Name" />
+											<xforms:value ref="Name" />
+										</xforms:itemset>
+									</xforms:select1>
+									</div>
 								</p>
 								<p>
 								<xforms:input ref="pbcore:formatGenerations" class="input-long" incremental="false">
@@ -536,6 +586,20 @@
 								<xforms:input ref="pbcore:formatEncoding" class="input-long" incremental="false">
 									<xforms:label class="justify-field">Encoding</xforms:label>
 									</xforms:input>
+									
+									<div class="recommendation">
+									<xforms:select1 ref="pbcore:formatEncoding">
+									<xforms:label class="justify-field">Recommended:</xforms:label>
+									<xforms:item>
+										<xforms:label></xforms:label>
+										<xforms:value></xforms:value>
+									</xforms:item>
+										<xforms:itemset nodeset="instance('ebu_VideoCompressionCodeCS')//Term">
+											<xforms:label ref="Name" />
+											<xforms:value ref="Name" />
+										</xforms:itemset>
+									</xforms:select1>
+									</div>
 								</p>
 								<p>
 								<xforms:input ref="pbcore:formatFileSize" class="input-long" incremental="false">
@@ -564,6 +628,68 @@
 								</p><p>
 								<xforms:input ref="pbcore:formatSamplingRate" class="input-long" incremental="false">
 									<xforms:label class="justify-field">Sampling Rate</xforms:label>
+									</xforms:input>
+								</p><p>
+								<xforms:input ref="pbcore:formatFrameSize" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Frame Size</xforms:label>
+									</xforms:input>
+								</p><p>
+								<xforms:input ref="pbcore:formatAspectRatio" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Aspect Ratio</xforms:label>
+									</xforms:input>
+									
+									<div class="recommendation">
+									<xforms:select1 ref="pbcore:formatAspectRatio">
+									<xforms:label class="justify-field">Recommended:</xforms:label>
+									<xforms:item>
+										<xforms:label></xforms:label>
+										<xforms:value></xforms:value>
+									</xforms:item>
+										<xforms:itemset nodeset="instance('ebu_VisualAspectRatioCS')//Term">
+											<xforms:label ref="Name" />
+											<xforms:value ref="Name" />
+										</xforms:itemset>
+									</xforms:select1>
+									</div>
+								</p><p>
+								<xforms:input ref="pbcore:formatFrameRate" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Frame Rate</xforms:label>
+									</xforms:input>
+									
+									<div class="recommendation">
+									<xforms:select1 ref="pbcore:formatFrameRate">
+									<xforms:label class="justify-field">Recommended:</xforms:label>
+									<xforms:item>
+										<xforms:label></xforms:label>
+										<xforms:value></xforms:value>
+									</xforms:item>
+										<xforms:itemset nodeset="instance('ebu_VideoFrameRateCS')//Term">
+											<xforms:label ref="Name" />
+											<xforms:value ref="Name" />
+										</xforms:itemset>
+									</xforms:select1>
+									</div>
+								</p><p>
+								<xforms:input ref="pbcore:formatColors" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Colors</xforms:label>
+									</xforms:input>
+									
+									<div class="recommendation">
+									<xforms:select1 ref="pbcore:formatColors">
+									<xforms:label class="justify-field">Recommended:</xforms:label>
+									<xforms:item>
+										<xforms:label></xforms:label>
+										<xforms:value></xforms:value>
+									</xforms:item>
+										<xforms:itemset nodeset="instance('ebu_ColourCodeCS')//Term">
+											<xforms:label ref="Name" />
+											<xforms:value ref="Name" />
+										</xforms:itemset>
+									</xforms:select1>
+									</div>
+								</p><p>
+								<xforms:input ref="pbcore:formatTracks" class="input-long" incremental="false">
+									<xforms:label class="justify-field">Tracks</xforms:label>
 									</xforms:input>
 								</p>
 							
