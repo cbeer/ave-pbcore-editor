@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:ebu:metadata-cs:DeviceTypeCodeCS_2008">
+        <!-- #####################################################################
+	     DEVICE TYPE CODE                                                     
+	     Definition: A list of code to qualify types of devices used in production. 
+	     
+	     The following Creative Commons Rights apply to the use of this EBU resource:
+	     http://creativecommons.org/licenses/by-sa/3.0/
+	     
+	     Owner: EBU Technical Department
+	     Author: Jean-Pierre Evain
+	     Contact: evain@ebu.ch
+	     
+	     ##################################################################### -->
+   
+   <Alias>EBUDeviceTypeCode</Alias>
+   
+   <Term  termID="1">
+      <Name xml:lang="en">Camera Electronic Motion</Name>
+      <Definition xml:lang="en">Apparatus, consisting of a light-proof box and a lens, which forms a representation of a real-world visual object. The camera converts the representation (of a sequence of images) into electrical impulses for transmission or onward storage</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="2">
+      <Name xml:lang="en">Camera Electronic Still</Name>
+      <Definition xml:lang="en">Apparatus, consisting of a light-proof box and a lens, which forms a representation of a real-world visual object. The camera converts the representation (of a single image, or mulltiple single images intended to be viewed individually) into electrical impulses for transmission or onward storage</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="3">
+      <Name xml:lang="en">Camera Film Motion</Name>
+      <Definition xml:lang="en">Apparatus, consisting of a light-proof box and a lens, which forms a representation of a real-world visual object. A camera with a shutter mechanism which stores a sequence of images (designed to be viewed as a sequence) onto chemical-based motion-picture film</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="4">
+      <Name xml:lang="en">Camera Film Still</Name>
+      <Definition xml:lang="en">Apparatus, consisting of a light-proof box and a lens, which forms a representation of a real-world visual object. A camera with a shutter mechanism which stores a single image (or multiple single images, designed to be viewed individually) onto chemical based film</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="5">
+      <Name xml:lang="en">Microphone Condenser</Name>
+      <Definition xml:lang="en">A microphone is a device for converting sound waves into electrical energy variations</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="6">
+      <Name xml:lang="en">Microphone Dynamic</Name>
+      <Definition xml:lang="en">A microphone is a device for converting sound waves into electrical energy variations</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="7">
+      <Name xml:lang="en">Amplifier</Name>
+      <Definition xml:lang="en">A machine for amplifying sound</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="8">
+      <Name xml:lang="en">Cassette Deck</Name>
+      <Definition xml:lang="en">A deck for use with standard audio cassettes. This may have play and record facilities</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="9">
+      <Name xml:lang="en">CD Burner</Name>
+      <Definition xml:lang="en">A machine which can produce standard music compact discs</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="10">
+      <Name xml:lang="en">CD Player</Name>
+      <Definition xml:lang="en">A machine which can play standard music compact discs</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="11">
+      <Name xml:lang="en">Cine Projector</Name>
+      <Definition xml:lang="en">A projector for showing cine film</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="12">
+      <Name xml:lang="en">DAT Machine</Name>
+      <Definition xml:lang="en">A machine for playing and recording Digital Audio Tape (DAT)</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="13">
+      <Name xml:lang="en">DVD Player</Name>
+      <Definition xml:lang="en">A machine for playing Digital Video Discs</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="14">
+      <Name xml:lang="en">DVD Burner</Name>
+      <Definition xml:lang="en">A machine which can produce standard digital video discs</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="15">
+      <Name xml:lang="en">Minidisc Player</Name>
+      <Definition xml:lang="en">A machine for playing and/or recording music mini discs</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="16">
+      <Name xml:lang="en">Non-linear Editor</Name>
+      <Definition xml:lang="en">An editing tool which makes use of computer technology to edit a programme or item virtually using references to data stored on hard disk</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="17">
+      <Name xml:lang="en">Personal Computer</Name>
+      <Definition xml:lang="en">A personal computer. This includes desktop and laptop machines and may refer to IBM compatible machines or Apple Macs</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="18">
+      <Name xml:lang="en">Radio Receiver</Name>
+      <Definition xml:lang="en">Any receiver capable of receiving audio radio broadcasts</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="19">
+      <Name xml:lang="en">Record Turntable</Name>
+      <Definition xml:lang="en">A turntable designed for use with vinyl records. For the purposes of this definition the turntable also includes the arm, stylus and cartridge</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="20">
+      <Name xml:lang="en">Reel to Reel Audio Tape Deck</Name>
+      <Definition xml:lang="en">A device for playing or recording magnetic audio tape</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="21">
+      <Name xml:lang="en">Sound Mixer</Name>
+      <Definition xml:lang="en">A device, usually in the form of a mixer desk, for mixing together inputs either from devices such as microphones or electronic musical instruments, or from pre-recorded sources. Sound mixers can be used to produce live or recorded output</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="22">
+      <Name xml:lang="en">Telecine Machine</Name>
+      <Definition xml:lang="en">A device which is used to play cinema film to produce television output</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="23">
+      <Name xml:lang="en">Television Receiver</Name>
+      <Definition xml:lang="en">A television set. This may refer to digital or analogue sets</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="24">
+      <Name xml:lang="en">Video Player</Name>
+      <Definition xml:lang="en">Any device which can be used to play video tape. Note that there are many different formats of video tape in use in the media industry and most machines will only be able to play tapes of one type. However, some machines are able to use multiple types</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="25">
+      <Name xml:lang="en">Vision Mixer</Name>
+      <Definition xml:lang="en">A device, usually in the form of a mixer desk, for mixing together various streams of visual input. This can include live studio and outside broadcast feeds as well as video, still and graphic material. Mixers can also be used to apply captions and titles.Vision mixers can be used to produce live or recorded output</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+
+</ClassificationScheme>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassificationScheme uri="urn:ebu:metadata-cs:SubjectTypeCodeCS_2008">
+	<!-- #####################################################################
+	     SUBJECT TYPE CODE                                 
+	     Definition: A list of codes to qualify the type of a subject 
+	     
+	     The following Creative Commons Rights apply to the use of this EBU resource:
+	     http://creativecommons.org/licenses/by-sa/3.0/
+	     
+	     Owner: EBU Technical Department
+	     Author: Jean-Pierre Evain
+	     Contact: evain@ebu.ch
+	     
+	     ##################################################################### -->
+
+   <Alias>EBUSubjectTypeCode</Alias>
+
+   <Version>2008-08-20</Version>
+
+   <Term termID="1">
+      <Name xml:lang="en">Atmosphere</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="2">
+      <Name xml:lang="en">Content Alert</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="3">
+      <Name xml:lang="en">Commercial Content</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="4">
+      <Name xml:lang="en">Genre</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="5">
+      <Name xml:lang="en">Intention</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="6">
+      <Name xml:lang="en">Intended Audience</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="7">
+      <Name xml:lang="en">Editorial Format</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="8">
+      <Name xml:lang="en">Programme Group Format</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term termID="9">
+      <Name xml:lang="en">Origination</Name>
+      <Definition xml:lang="en"/>
+      <ChangeComment></ChangeComment>
+      <ChangeVersionDate/>
+      <FirstVersiondate>2007-09-25</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+</ClassificationScheme>

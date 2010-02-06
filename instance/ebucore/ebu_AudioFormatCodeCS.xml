@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:ebu:metadata-cs:AudioFormatCodeCS_2008"><!--
+##################################################################### 
+AUDIO FORMAT CS	                                                                             
+Definition: This is a list of possible presentation formats for audio. 
+
+The following Creative Commons Rights apply to the use of this EBU resource:
+http://creativecommons.org/licenses/by-sa/3.0/
+
+Owner: EBU Technical Department
+Author: Jean-Pierre Evain
+Contact: evain@ebu.ch
+
+##################################################################### 
+   		-->
+   
+   <Alias>EBUAudioFormatCode</Alias>
+   
+   <Term  termID="1">
+      <Name xml:lang="en">No sound</Name>
+      <Definition xml:lang="en"/>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="2">
+      <Name xml:lang="en">1/0 (Mono)</Name>
+      <Definition xml:lang="en">Single Monographic Sound. A system using a single discrete audio channel (Monophonic).</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="3">
+      <Name xml:lang="en">Dual mono</Name>
+      <Definition xml:lang="en"/>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="4">
+      <Name xml:lang="en">2/0 (Stereo)</Name>
+      <Definition xml:lang="en">Stereographic Sound</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="5">
+      <Name xml:lang="en">Stereo A and B</Name>
+      <Definition xml:lang="en">A system using two discrete audio channels, typically derived from two transducers geographically separated, to give slightly different audio perspective of the same event.</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="6">
+      <Name xml:lang="en">Stereo M and S</Name>
+      <Definition xml:lang="en">A system using two discrete audio channels, typically derived from two transducers geographically separated, to give slightly different audio perspective of the same event.</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="7">
+      <Name xml:lang="en">Multi-lingual</Name>
+      <Definition xml:lang="en"/>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="8">
+      <Name xml:lang="en">Surround</Name>
+      <Definition xml:lang="en">Surround Sound</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="9">
+      <Name xml:lang="en">Multi-channel</Name>
+      <Definition xml:lang="en"/>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+      <Term termID="9.1">
+         <Name xml:lang="en">2/1 (Multi-channel)</Name>
+         <Definition xml:lang="en"/>
+         <Reference/>
+         <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+         <ChangeVersionDate/>
+         <ValidityFlag>1</ValidityFlag>
+         <DeprecatedVersionDate/>
+      </Term>
+      <Term termID="9.2">
+         <Name xml:lang="en">2/2 (Multi-channel)</Name>
+         <Definition xml:lang="en"/>
+         <Reference/>
+         <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+         <ChangeVersionDate/>
+         <ValidityFlag>1</ValidityFlag>
+         <DeprecatedVersionDate/>
+      </Term>
+      <Term termID="9.3">
+         <Name xml:lang="en">3/0 (Multi-channel)</Name>
+         <Definition xml:lang="en"/>
+         <Reference/>
+         <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+         <ChangeVersionDate/>
+         <ValidityFlag>1</ValidityFlag>
+         <DeprecatedVersionDate/>
+      </Term>
+      <Term termID="9.4">
+         <Name xml:lang="en">3/1 (Multi-channel)</Name>
+         <Definition xml:lang="en"/>
+         <Reference/>
+         <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+         <ChangeVersionDate/>
+         <ValidityFlag>1</ValidityFlag>
+         <DeprecatedVersionDate/>
+      </Term>
+      <Term termID="9.5">
+         <Name xml:lang="en">3/2 (Multi-channel)</Name>
+         <Definition xml:lang="en"/>
+         <Reference/>
+         <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+         <ChangeVersionDate/>
+         <ValidityFlag>1</ValidityFlag>
+         <DeprecatedVersionDate/>
+      </Term>
+   </Term>
+   
+   <Term  termID="10">
+      <Name xml:lang="en">Home Theatre 5.1</Name>
+      <Definition xml:lang="en">A system comprising five discrete, full range main channels (Left, Centre, Right, Left surround, Right surround) plus a band-limited Low frequency effects channel: 3/2/1 (L,C,R, LSide, RSide)</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="11">
+      <Name xml:lang="en">Movie Theatre</Name>
+      <Definition xml:lang="en">3/2/2 /L,C,R, LSide, RSide, LRear, RRear)</Definition>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="12">
+      <Name xml:lang="en">7.1</Name>
+      <Definition xml:lang="en"/>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term  termID="13">
+      <Name xml:lang="en">Other</Name>
+      <Definition xml:lang="en"/>
+      <Reference/>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate/>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+
+</ClassificationScheme>

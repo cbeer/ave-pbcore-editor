@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassificationScheme uri="urn:ebu:metadata-cs:SignLanguageCodeCS_2008">
+   
+ <!-- ##################################################################### 
+         SIGN LANGUAGE  CODE                                                              
+         Definition: Codes attributed to registered signed version of spoken languages
+         
+         The following Creative Commons Rights apply to the use of this EBU resource:
+         http://creativecommons.org/licenses/by-sa/3.0/
+         
+         Owner: EBU Technical Department
+         Author: Jean-Pierre Evain
+         Contact: evain@ebu.ch
+         
+         ##################################################################### -->
+    
+   <Alias>EBUSignLanguageCode</Alias>
+ 
+   <Version>2008-08-20</Version>
+   
+   <Term termID="sgn-afr-ZA">
+      <Name xml:lang="en">Signed Afrikaans</Name>
+      <Definition>South Africa</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+  
+   <Term termID="sgn-chi-TW">
+      <Name xml:lang="en">Signed Chinese</Name>
+      <Definition>Taiwan</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-dan-DK">
+      <Name xml:lang="en">Signed Danish</Name>
+      <Definition>Denmark</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-dut-BE">
+      <Name xml:lang="en">Signed Dutch</Name>
+      <Definition>Belgium</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-dut-NL">
+      <Name xml:lang="en">Signed Dutch</Name>
+      <Definition>Netherlands</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-eng-GB">
+      <Name xml:lang="en">Signed English</Name>
+      <Definition>United Kingdom</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-eng-IE">
+      <Name xml:lang="en">Signed English</Name>
+      <Definition>Ireland</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-eng-US">
+      <Name xml:lang="en">Signed English</Name>
+      <Definition>USA</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-fin-FI">
+      <Name xml:lang="en">Signed Finnish</Name>
+      <Definition>Finland</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-fre-BE">
+      <Name xml:lang="en">Signed French</Name>
+      <Definition>Belgium</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-fre-CA">
+      <Name xml:lang="en">Signed French</Name>
+      <Definition>Canada</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-fre-FR">
+      <Name xml:lang="en">Signed French</Name>
+      <Definition>France</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-jpn-JP">
+      <Name xml:lang="en">Signed Japanese</Name>
+      <Definition>Japan</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-nor-NO">
+      <Name xml:lang="en">Signed Norwegian</Name>
+      <Definition>Norway</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-por-PT">
+      <Name xml:lang="en">Signed Portuguese</Name>
+      <Definition>Portugal</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   <Term termID="sgn-swe-SE">
+      <Name xml:lang="en">Signed Swedish</Name>
+      <Definition>Sweden</Definition>
+      <Reference>SignWriting.org</Reference>
+      <ChangeComment>First version after conversion of P/META into XML. First version date is version date from reference publisher</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+</ClassificationScheme>

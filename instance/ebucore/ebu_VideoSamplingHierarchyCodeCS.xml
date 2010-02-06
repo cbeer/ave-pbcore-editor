@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:ebu:metadata-cs:VideoSamplingHierarchyCodeCS_2008">
+   
+        <!-- ##################################################################### 
+        VIDEO SAMPLING HIERARCHY CODE                                         
+	     Definition:
+	     
+	     The following Creative Commons Rights apply to the use of this EBU resource:
+	     http://creativecommons.org/licenses/by-sa/3.0/
+	     
+	     Owner: EBU Technical Department
+	     Author: Jean-Pierre Evain
+	     Contact: evain@ebu.ch
+	     
+	     ##################################################################### -->
+   
+   <Alias>EBUVideoSamplingHierarchyCode</Alias>
+   
+   <Term termID="1">
+      <Name xml:lang="en">4:1:0</Name>
+      <Definition xml:lang="en"/>
+      <Reference>ITU-R BT.601</Reference>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <FirstVersiondate>2007-04-12</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate></DeprecatedVersionDate>
+   </Term>
+   
+   <Term termID="2">
+      <Name xml:lang="en">4:1:1</Name>
+      <Definition xml:lang="en"/>
+      <Reference>ITU-R BT.601</Reference>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <FirstVersiondate>2007-04-12</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate></DeprecatedVersionDate>
+   </Term>
+   
+   <Term termID="3">
+      <Name xml:lang="en">4:2:0</Name>
+      <Definition xml:lang="en"/>
+      <Reference>ITU-R BT.601</Reference>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <FirstVersiondate>2007-04-12</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate></DeprecatedVersionDate>
+   </Term>
+   
+   <Term termID="4">
+      <Name xml:lang="en">4:2:2</Name>
+      <Definition xml:lang="en"/>
+      <Reference>ITU-R BT.601</Reference>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <FirstVersiondate>2007-04-12</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate></DeprecatedVersionDate>
+   </Term>
+   
+   <Term termID="5">
+      <Name xml:lang="en">4:4:4</Name>
+      <Definition xml:lang="en"/>
+      <Reference>ITU-R BT.601</Reference>
+      <ChangeComment>First version after conversion of P/META into XML</ChangeComment>
+      <ChangeVersionDate>2007-04-12</ChangeVersionDate>
+      <FirstVersiondate>2007-04-12</FirstVersiondate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate></DeprecatedVersionDate>
+   </Term>
+
+</ClassificationScheme>

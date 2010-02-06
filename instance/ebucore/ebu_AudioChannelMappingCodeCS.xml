@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:ebu:metadata-cs:AudioChannelMappingCodeCS_2009"><!--
+##################################################################### 
+AUDIO CHANNEL MAPPING CODE CS	                                                                             
+Definition: This is a list of definition for channel mapping in mutli-channel audio systems. 
+
+The following Creative Commons Rights apply to the use of this EBU resource:
+   http://creativecommons.org/licenses/by-sa/3.0/
+   
+   Owner: EBU Technical Department
+   Author: Jean-Pierre Evain
+   Contact: evain@ebu.ch
+   
+   ##################################################################### 
+-->
+   <annotation>
+      <documentation>
+         The following Creative Commons Rights apply to the use of this EBU resource:
+         http://creativecommons.org/licenses/by-nc-sa/3.0/
+         
+         Owner: EBU Technical Department
+         Author: Jean-Pierre Evain
+         Contact: evain@ebu.ch
+      </documentation>
+   </annotation>
+   
+   
+   <Alias>EBUAudioChannelMappingCode</Alias>
+   
+   <Term  termID="1">
+      <Name xml:lang="en">SPEAKER_FRONT_CENTER [OC]</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="2">
+      <Name xml:lang="en">SPEAKER_FRONT_LEFT [OL]</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="3">
+      <Name xml:lang="en">SPEAKER_FRONT_RIGHT [OR]</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="4">
+      <Name xml:lang="en">SPEAKER_BACK_CENTER [OS]</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="5">
+      <Name xml:lang="en">SPEAKER_BACK_LEFT [OLs]</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="6">
+      <Name xml:lang="en">SPEAKER_BACK_RIGHT [ORs]</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="7">
+      <Name xml:lang="en">SPEAKER_LOW_FREQUENCY [OLFE]</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="8">
+      <Name xml:lang="en">SPEAKER_MONO1</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="9">
+      <Name xml:lang="en">SPEAKER_MONO2</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="10">
+      <Name xml:lang="en">SPEAKER_STEREO_LEFT</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="11">
+      <Name xml:lang="en">SPEAKER_STEREO_RIGHT</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="12">
+      <Name xml:lang="en">SPEAKER_STEREO2_LEFT</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="13">
+      <Name xml:lang="en">SPEAKER_STEREO2_RIGHT</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="14">
+      <Name xml:lang="en">PGM_FRONT_CENTER</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="15">
+      <Name xml:lang="en">PGM_FRONT_LEFT</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="16">
+      <Name xml:lang="en">PGM_FRONT_RIGHT</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="17">
+      <Name xml:lang="en">PGM_BACK_CENTER</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   <Term  termID="18">
+      <Name xml:lang="en">PGM_MONO</Name>
+      <Definition xml:lang="en"></Definition>
+      <Reference/>
+      <ChangeComment>Built from EBU Tech 3285 - Broadcast Wave Format</ChangeComment>
+      <ChangeVersionDate>2009-10-14</ChangeVersionDate>
+      <ValidityFlag>1</ValidityFlag>
+      <DeprecatedVersionDate/>
+   </Term>
+   
+   
+</ClassificationScheme>
