@@ -1,3 +1,95 @@
+February 6, 2010
+
+*****************************************
+1. About the PBCore XML Editor
+*****************************************
+
 This is a demonstration Orbeon XForms-based editor for PBCore documents. It should be deployed to an existing Java servlet container with Orbeon already installed and functioning. This initial work is based on existing XForms/MODS work done by Brown University <http://dl.lib.brown.edu/its/software/metadata/>.
 
+As mentioned, it is based on the open source forms solution, Orbeon.
+Orbeon, allows you to write XForms which are transalated on the
+server side to html, CSS and JavaScript.  It is delivered
+to standard web browsers (including Internet Explorer, Firefox,
+Safari and Opera) thanks to XForms and Ajax technology, with no
+need for client-side software or plugins.
+
+The PBCore XML Editor is made up of one main html file along with a schema, stylesheet, and numerous XML files that represent XML instances. Together these files produce a PBCore XML Editor.
+
+This particular implemtation integrates the Orbeon Forms XForms
+engine within a Java web application.  It is seperate from the
+Orbeon WAR file.  With this method, the MODS Editor application
+is deployed in its own Java web archive (WAR), and Orbeon Forms
+in its own WAR.
+
+For more information about Orbeon Forms, please visit:
+        http://www.orbeon.com/
+
+For more information about the Brown University MODS Editor, please visit:
+	http://dl.lib.brown.edu/xforms/code4lib
+
+For more information about the PBCore XML Editor, please visit:
+	http://github.com/cbeer/ave-pbcore-editor
+
+
 You can load existing XML documents by using the "src" request parameter -- e.g.  http://my.servlet.server/editor/pbcore/demo.html?src={url to an existing document}
+     
+*****************************************
+2. Licenses
+*****************************************
+
+Components of the Brown University MODS Editor are licensed the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. These components include:
+
+    * ./css
+    * ./images
+    * README
+
+This product includes software developed by Orbeon Forms (http://www.orbeon.com/), the components of which are distributed under the terms of the GNU Lesser General Public License or Apache License from http://github.com/orbeon/orbeon-forms/
+
+Data sources and schemas in ./instances are (c) their respective owners
+
+    * ./instances/pbcore-* (c) Corporation for Public Broadcasting, http://pbcore.org
+    * ./instances/ebucore/* made available under the terms embedded in the files (EBU TECH 3293)
+    * ./instances/mime.types derived from the Apache HTTPD mime.types list under the terms of the Apache License, Version 2.0 from the original at http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
+
+Please refer to file headers to identify which license governs the
+distribution of a particular file.
+
+Other components:
+
+Copyright (c) 2010 Chris Beer
+ 
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR 
+OTHER DEALINGS IN THE SOFTWARE.
+
+*****************************************
+3. System Requirements and Installation
+*****************************************
+
+The system requirements and installation procedure are detailed online
+at:
+
+  http://wiki.orbeon.com/forms/doc/developer-guide/admin-installing
+
+In addition, the Orbeon Forms tutorial also tackles installation. Online version:
+
+  http://www.orbeon.com/orbeon/doc/intro-tutorial
+
+
