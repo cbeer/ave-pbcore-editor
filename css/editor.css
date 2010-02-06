@@ -381,10 +381,13 @@ select.xforms-required-empty {
 
 
 .xforms-group {
-         margin-bottom: 2em;
-	 display: block;
-	 padding-bottom: 2em;
+         margin-bottom: 3em;
         }
+
+.xforms-case-selected.xforms-group {
+	 display: block;
+}
+
 
 .block {
  	clear: left;
